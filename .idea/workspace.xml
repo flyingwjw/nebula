@@ -8,19 +8,33 @@
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Release-Visual Studio" CONFIG_NAME="Release" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=&quot;H:/nebula&quot;" />
-      <configuration PROFILE_NAME="Debug-Visual Studio" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=&quot;H:/nebula&quot; -DCMAKE_DEBUG_POSTFIX=&quot;d&quot;" />
-      <configuration PROFILE_NAME="Release-Cygwin" CONFIG_NAME="Release" TOOLCHAIN_NAME="Cygwin" />
-      <configuration PROFILE_NAME="Debug-Cygwin" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Cygwin" />
+      <configuration PROFILE_NAME="Release-Visual Studio" CONFIG_NAME="Release" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=&quot;H:/nebula&quot;  -DCMAKE_TOOLCHAIN_FILE=&quot;H:/code/vcpkg/scripts/buildsystems/vcpkg.cmake&quot;" />
+      <configuration PROFILE_NAME="Debug-Visual Studio" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=&quot;H:/nebula&quot; -DCMAKE_DEBUG_POSTFIX=&quot;d&quot; -DCMAKE_TOOLCHAIN_FILE=&quot;H:/code/vcpkg/scripts/buildsystems/vcpkg.cmake&quot;" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4879ac-8901-45aa-abfb-612f63acf00c" name="Default Changelist" comment="" />
+    <list default="true" id="fd4879ac-8901-45aa-abfb-612f63acf00c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/LibhelloworldConfig.cmake.in" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cmake/LibhelloworldConfig.cmake.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/LibhelloworldConfigBuildTree.cmake.in" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cmake/LibhelloworldConfigBuildTree.cmake.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/LibhelloworldConfigVersion.cmake.in" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cmake/LibhelloworldConfigVersion.cmake.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/hello.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/include/hello.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/nebula.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/include/nebula.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/include/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nebula-config.h.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nebula-config.h.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/hello-world.c" beforeDir="false" afterPath="$PROJECT_DIR$/sample/hello-world.c" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-visual-studio/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release-cygwin/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-cygwin/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release-visual-studio/" />
+    <ignored path="$PROJECT_DIR$/lib/cmake-build-release-visual-studio/" />
+    <ignored path="$PROJECT_DIR$/lib/cmake-build-debug-visual-studio/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,111 +44,155 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release-Cygwin" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release-Visual Studio" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/sample/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="134" selection-start-line="134" selection-end-line="134" selection-end-column="57" />
+            <state relative-caret-position="361">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/helloworld/hello.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/include/utils.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding>
+                <element signature="e#86#150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/include/nebula.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <element signature="e#69#95#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt">
+        <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="199" column="43" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="43" />
+            <state relative-caret-position="368">
+              <caret line="196" selection-start-line="196" selection-start-column="1" selection-end-line="198" selection-end-column="56" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-release-cygwin/CMakeCache.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="321" column="172" selection-start-line="321" selection-start-column="165" selection-end-line="321" selection-end-column="172" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.10-IDEA182.jar!/std/Lua53/os.lua">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.10-IDEA182.jar!/std/Lua53/package.lua">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldConfig.cmake">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/LibhelloworldConfig.cmake">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/include/hello.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/hello-world.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/include/nebula-config.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nebula-config.h.cmake">
+        <entry file="file://$PROJECT_DIR$/lib/cmake/LibhelloworldConfig.cmake.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="171">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/cmake_install.cmake">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/lib/cmake/LibhelloworldConfigBuildTree.cmake.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="56" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>HDR_PRIVATE</find>
       <find>NEBULA_LIB_DLL</find>
-      <find>HELLOWORLD_LIBRARIES</find>
       <find>NEBULA__NEED_DLLEXPORT</find>
       <find>NEBULA_INTERNAL</find>
       <find>HAVE_HIDDEN</find>
       <find>DEF_INSTALL_CMAKE_DIR</find>
-      <find>HELLOWORLD_INSTALL_INCLUDE_DIR</find>
       <find>HELLOWORLD_INCLUDE_DIR</find>
       <find>LIBHELLOWORLD_CMAKE_DIR</find>
-      <find>LIBHELLOWORLD_INCLUDE_DIRS</find>
-      <find>HELLOWORLD_INCLUDE_DIRS</find>
       <find>LibhelloworldTargets</find>
-      <find>HDR_COMPAT</find>
-      <find>HDR_PUBLIC</find>
       <find>include_directories</find>
+      <find>HELLOWORLD_VERSION</find>
+      <find>HELLOWORLD_ENABLE_VERBOSE_DEBUG</find>
+      <find>NEBULA_NEED_DLLEXPORT</find>
+      <find>NEBULA_DISABLE_SAMPLES</find>
+      <find>HELLOWORLD_LIBRARIES</find>
+      <find>HELLOWORLD_INCLUDE_DIRS</find>
+      <find>HELLOWORLD_INSTALL_INCLUDE_DIR</find>
+      <find>Config.cmake</find>
+      <find>HELLOWORLD_INSTALL_CMAKE_DIR</find>
+      <find>nebula-config</find>
       <find>include</find>
+      <find>HDR_PUBLIC</find>
+      <find>HDR_COMPAT</find>
+      <find>LibhelloworldConfig</find>
+      <find>LIBHELLOWORLD_INCLUDE_DIRS</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cmake-build-debug-visual-studio/include/nebula-config.h" />
         <option value="$PROJECT_DIR$/cmake/LibhelloworldConfigBuildTree.cmake.in" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake-build-release-cygwin/CMakeCache.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/sample/hello-world.c" />
+        <option value="$PROJECT_DIR$/sample/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/lib/CMakeLists.txt" />
       </list>
     </option>
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="1-hello-world" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="708" />
@@ -157,16 +215,59 @@
             <path>
               <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
               <item name="nebula" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug-visual-studio" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nebula" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nebula" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="helloworld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nebula" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nebula" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nebula" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="nebula" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="H:\code\CLionProjects\nebula" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="nebula" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="H:\code\CLionProjects\nebula" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lua" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -175,6 +276,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\code\CLionProjects\nebula\lib" />
       <recent name="H:\code\nebula\lib\helloworld" />
     </key>
   </component>
@@ -190,21 +292,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.hello-world">
-    <configuration name="hello-world" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="nebula" TARGET_NAME="hello-world" CONFIG_NAME="Debug-Visual Studio" RUN_TARGET_PROJECT_NAME="nebula" RUN_TARGET_NAME="hello-world">
+  <component name="RunManager">
+    <configuration name="helloworld" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="nebula" TARGET_NAME="helloworld" CONFIG_NAME="Release-Visual Studio" RUN_TARGET_PROJECT_NAME="nebula" RUN_TARGET_NAME="hello-world">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CMake.Install" enabled="true" />
       </method>
     </configuration>
-    <configuration name="helloworld" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="nebula" TARGET_NAME="helloworld" CONFIG_NAME="Debug-Visual Studio">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/lib/helloworld/hello.c" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="CMake Application.hello-world" />
-      <item itemvalue="CMake Application.helloworld" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -222,22 +326,22 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18496802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32858992" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="LuaCheck" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.2751896" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.27440348" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.18418202" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -248,93 +352,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sample/hello-world.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#86#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/hello.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/helloworld/hello.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/include/nebula-config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/LibhelloworldConfigVersion.cmake.in">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/LibhelloworldConfig.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldTargets.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldConfigVersion.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldConfig.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/nebula.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#69#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/LibhelloworldConfigBuildTree.cmake.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/LibhelloworldConfig.cmake.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeCache.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldTargets.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-642" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/include/nebula-config.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/LibhelloworldConfig.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldTargets.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldConfigVersion.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/LibhelloworldConfig.cmake" />
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.10-IDEA182.jar!/std/Lua53/builtin.lua">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -345,53 +367,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/cmake_install.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-cygwin/CMakeCache.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt" />
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.10-IDEA182.jar!/std/Lua53/os.lua">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.10-IDEA182.jar!/std/Lua53/package.lua">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldConfig.cmake">
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/include/nebula-config.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/lib/CMakeFiles/Export/cmake/LibhelloworldTargets.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/lib/CMakeFiles/Export/cmake/LibhelloworldTargets-release.cmake" />
+    <entry file="file://$PROJECT_DIR$/lib/cmake/LibhelloworldConfigVersion.cmake.in">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/LibhelloworldConfig.cmake">
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldConfigVersion.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldTargets.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeCache.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="187">
+          <caret line="171" column="64" selection-start-line="171" selection-start-column="64" selection-end-line="171" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/include/nebula-config.h">
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeDirectoryInformation.cmake">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nebula-config.h.cmake">
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/LibhelloworldConfig.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/lib/helloworld.lib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/lib/include/nebula-config.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/nebula-config.h.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/cmake_install.cmake">
+    <entry file="file://$PROJECT_DIR$/lib/include/hello.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release-cygwin/CMakeCache.txt">
+    <entry file="file://$PROJECT_DIR$/lib/include/utils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="321" column="172" selection-start-line="321" selection-start-column="165" selection-end-line="321" selection-end-column="172" />
+        <state relative-caret-position="209">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#86#150#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/lib/helloworld/hello.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="134" selection-start-line="134" selection-end-line="134" selection-end-column="57" />
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt">
+    <entry file="file://$PROJECT_DIR$/lib/include/nebula.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="199" column="43" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="43" />
+        <state relative-caret-position="133">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#69#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/hello-world.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/LibhelloworldConfig.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cmake/LibhelloworldConfig.cmake.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cmake/LibhelloworldConfigBuildTree.cmake.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="196" selection-start-line="196" selection-start-column="1" selection-end-line="198" selection-end-column="56" />
         </state>
       </provider>
     </entry>
